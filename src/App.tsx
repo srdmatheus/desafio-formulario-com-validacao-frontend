@@ -1,16 +1,7 @@
-
-import './App.css'
-
-function App() {
-
+export const App =() => {
   return (
-    <>
-      <main>
-        <h1>Seja bem vindo! :)</h1>
-        <p>Terceiro Desafio: Formulário de Cadastro de Membros</p>
-      </main>
-    </>
+    <main>
+      <h1>hello world</h1>
+    </main>
   );
 }
-
-export default App
