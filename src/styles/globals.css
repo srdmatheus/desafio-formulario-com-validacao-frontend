@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --border: 30 30 30;
+
+    --shadow: 30 30 30;
+
+    --danger: 230 20 0;
+    --success: 48 209 103;
+
+    --background: 238 238 238;
+    --background-foreground: 208 208 208;
+
+    --primary: 26 47 251;
+    --foreground: 30 30 30;
+
+
+    /* Fonts */
+    --font-rubik: "Rubik", sans-serif;
+  }
+
+  * {
+    @apply border-border
+  }
+
+  body {
+    @apply h-dvh overflow-x-hidden bg-background text-foreground antialiased;
+  }
+
+  input, select {
+    @apply bg-transparent
+  }
+
+  img {
+    @apply h-auto block max-w-full;
+  }
+
+  a, button {
+    @apply outline-none focus-visible:ring-2 ring-offset-transparent focus-visible:ring-primary
+  }
+}
